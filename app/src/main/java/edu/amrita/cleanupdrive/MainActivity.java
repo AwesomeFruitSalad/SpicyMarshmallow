@@ -1,6 +1,7 @@
 package edu.amrita.cleanupdrive;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         onLoginOrRegisterButtonClicked();
     }
 
+
     private void onLoginOrRegisterButtonClicked() {
         loginOrRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
                         Snackbar.make(findViewById(android.R.id.content), "Login successful",
                                 Snackbar.LENGTH_LONG)
                                 .show();
+
+                        Intent intent = new Intent(getBaseContext(), Secondactivity.class);
+                        startActivity(intent);
+
+
+
                         break;
                     }
                 }

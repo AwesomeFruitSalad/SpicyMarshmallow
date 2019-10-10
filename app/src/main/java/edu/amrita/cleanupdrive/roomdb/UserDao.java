@@ -15,6 +15,9 @@ public interface UserDao {
     @Insert
     void addUsers(List<User> user);
 
+    @Insert
+    void addLocation(User location);
+
     @Query("DELETE FROM users")
     void nukeTable();
 
@@ -23,5 +26,8 @@ public interface UserDao {
 
     @Query("SELECT username FROM users")
     List<String> getAllUsernames();
+
+    @Query("SELECT username,location FROM users")
+    List<String> getAllLocations();
 
 }
