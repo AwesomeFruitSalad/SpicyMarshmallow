@@ -1,5 +1,6 @@
 package edu.amrita.cleanupdrive;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.AsyncTask;
@@ -8,6 +9,9 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.view.LayoutInflater;
+import android.widget.EditText;
+import android.content.Context;
 
 import java.util.ArrayList;
 
@@ -27,6 +31,7 @@ public class Secondactivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        final Context c = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondactivity);//}
 
@@ -50,15 +55,17 @@ public class Secondactivity extends AppCompatActivity {
     }
     private void onaddloc(){
         addloc.setOnClickListener(new OnClickListener(){
+
             @Override
             public void onClick(View v) {
+                LayoutInflater layoutInflaterAndroid = LayoutInflater.from(c);
+                View mView = layoutInflaterAndroid.inflate(R.layout.dialogue_box_input , null);
+                AlertDialog.Builder alertDialogBuilderUserInput = new AlertDialog.Builder(c);
+                alertDialogBuilderUserInput.setView(mView);
 
+                final EditText userInputDialogEditText = (EditText) mView.findViewById(R.id.userInputDialog);
             }
-
-
-                                  }
-
-
+            }
         );
     }
 
