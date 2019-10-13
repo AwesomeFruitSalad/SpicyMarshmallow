@@ -13,10 +13,9 @@ public class User {
     private String password;
     private String location;
 
-    public User(String username, String password, String location) {
+    public User(String username, String password) {
         this.username = username;
         this.password = password;
-        this.location = location;
     }
 
     public String getUsername() {
@@ -51,11 +50,5 @@ public class User {
                 ", password='" + password + '\'' +
                 '}';
     }
-
-    public String toStringForLoc() {
-        return "Location{" +
-                "username='" + username + '\'' + '\t'+
-                ", Location='" + location + '\'' +
-                '}';
-    }
+    
 }
