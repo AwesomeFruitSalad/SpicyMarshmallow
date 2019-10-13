@@ -27,7 +27,4 @@ public interface UserDao {
     @Query("SELECT username FROM users")
     List<String> getAllUsernames();
 
-    @Query("SELECT username,location FROM users")
-    List<String> getAllLocations();
-
 }
