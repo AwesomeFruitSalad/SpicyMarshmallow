@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_locations">
+
+    <fragment
+        android:id="@+id/navigation_locations"
+        android:name="edu.amrita.cleanupdrive.ui.locations.LocationsFragment"
+        android:label="Locations"
+        tools:layout="@layout/fragment_locations" />
+
+    <fragment
+        android:id="@+id/navigation_location_map"
+        android:name="edu.amrita.cleanupdrive.ui.locationmap.LocationMapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_location_map" />
+
+</navigation>
