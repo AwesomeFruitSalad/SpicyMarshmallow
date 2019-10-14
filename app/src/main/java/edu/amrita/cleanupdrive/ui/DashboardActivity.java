@@ -12,7 +12,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import edu.amrita.cleanupdrive.R;
 
-public class Dashboard extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
