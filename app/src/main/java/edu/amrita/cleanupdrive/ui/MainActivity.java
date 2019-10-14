@@ -1,4 +1,4 @@
-package edu.amrita.cleanupdrive;
+package edu.amrita.cleanupdrive.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,6 +17,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
+import edu.amrita.cleanupdrive.R;
 import edu.amrita.cleanupdrive.roomdb.User;
 import edu.amrita.cleanupdrive.roomdb.UserDao;
 import edu.amrita.cleanupdrive.roomdb.UserRoomDatabase;
@@ -65,10 +66,8 @@ public class MainActivity extends AppCompatActivity {
                                 Snackbar.LENGTH_LONG)
                                 .show();
 
-                        Intent intent = new Intent(getBaseContext(), Secondactivity.class);
+                        Intent intent = new Intent(getBaseContext(), Dashboard.class);
                         startActivity(intent);
-
-
 
                         break;
                     }
