@@ -2,7 +2,7 @@ package edu.amrita.cleanupdrive.utility;
 
 import java.util.ArrayList;
 
-import edu.amrita.cleanupdrive.roomdb.User;
+import edu.amrita.cleanupdrive.roomdb.userdb.User;
 
 public class MockData {
 

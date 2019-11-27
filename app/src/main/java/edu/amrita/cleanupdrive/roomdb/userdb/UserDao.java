@@ -1,4 +1,4 @@
-package edu.amrita.cleanupdrive.roomdb;
+package edu.amrita.cleanupdrive.roomdb.userdb;
 
 import androidx.room.Dao;
 import androidx.room.Insert;

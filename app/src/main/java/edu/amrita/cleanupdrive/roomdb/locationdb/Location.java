@@ -1,8 +1,10 @@
-package edu.amrita.cleanupdrive.roomdb;
+package edu.amrita.cleanupdrive.roomdb.locationdb;
 
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
+
+import edu.amrita.cleanupdrive.roomdb.userdb.User;
 
 import static androidx.room.ForeignKey.CASCADE;
 
